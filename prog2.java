@@ -33,7 +33,7 @@ class stock{
         Scanner sc = new Scanner(System.in);
         stock book=new stock();
         book.getdata(sc);
-        System.out.println("\nEnter details to purchase:");
+        System.out.println("\nEnter details to purchase: ");
         System.out.print("Enter Title: ");
         String pt = sc.nextLine();
 
