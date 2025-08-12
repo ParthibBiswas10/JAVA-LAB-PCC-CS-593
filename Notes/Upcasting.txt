@@ -1,0 +1,48 @@
+Note on upcasting:
+
+class Figure {
+    void area() {
+        System.out.println("Area of figure");
+    }
+}
+
+class Rectangle extends Figure {
+    @Override
+    void area() {
+        System.out.println("Area of rectangle");
+    }
+}
+
+class Triangle extends Figure {
+    @Override
+    void area() {
+        System.out.println("Area of triangle");
+    }
+}
+
+
+public class Test {
+    public static void main(String[] args) {
+        Figure f; // parent reference
+
+        f = new Rectangle(); // upcasting
+        f.area(); // calls Rectangle's version ✅
+
+        f = new Triangle(); // upcasting
+        f.area(); // calls Triangle's version ✅
+    }
+}
+
+
+🔍 What’s happening in memory:
+f is of type Figure (parent),
+but inside it stores a Rectangle object.
+
+When you call f.area(), Java does not look at Figure’s method first.
+It checks the real object (Rectangle) and calls that overridden method.
+
+Then we assign f a new object: Triangle.
+Now, when you call f.area(), it runs Triangle’s method.
+
+
+IMportant: This is runtime polymorphism — decision of which area() to call happens when the program runs, not when it’s compiled.

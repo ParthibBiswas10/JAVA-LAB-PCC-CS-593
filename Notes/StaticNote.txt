@@ -1,0 +1,12 @@
+1. Definition
+An instance variable is a variable that belongs to one specific object (instance) of a class.
+Every object you create gets its own copy of that variable in memory.
+
+2. Static vs. Instance
+Static variable → shared by all objects (only one copy in memory, belongs to the class).
+Instance variable → each object has its own copy (belongs to the object/instance).
+
+💡 Shortcut rule:
+
+If a variable should have different values for different objects → instance variable.
+If a variable is the same for all objects → static variable.
