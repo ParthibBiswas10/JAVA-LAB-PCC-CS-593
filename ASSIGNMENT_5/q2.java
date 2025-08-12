@@ -18,6 +18,58 @@ noc * price)
 3. void show() — to display the elements describes in base class along with the number of copies
 purchased and amount to be paid to the shopkeeper */
 
+import java.util.*;
+class Sale{
+    String title,author,publication;
+    double price;
+  void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Book Title: ");
+        title = sc.nextLine();
+        System.out.print("Enter Author Name: ");
+        author = sc.nextLine();
+        System.out.print("Enter Publication Name: ");
+        publication = sc.nextLine();
+        System.out.print("Enter Price: ");
+        price = sc.nextDouble();
+    }
+    void display(){
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("publication: " + publication);
+        System.out.println("Price: " + price);
+    }
+
+}
+class Purchase extends Sale {
+    Scanner sc=new Scanner(System.in);
+    int noc;
+    double amt;
+    void accept(){
+        System.out.println("Number of Copies Ordered: ");
+        noc=sc.nextInt();
+
+    }
+    void cal(){
+        amt=noc*price;
+      
+    }
+    void show(){
+        display();
+        System.out.println("Copies: "+noc);
+        System.out.println("Total Amount: "+amt);
+    }
+}
+public class q2{
+    public static void main(String[] args) {
+        Purchase obj=new Purchase();
+        obj.input();
+        obj.accept();
+        obj.cal(); 
+        obj.show();
 
 
+
+    }
+}
 
