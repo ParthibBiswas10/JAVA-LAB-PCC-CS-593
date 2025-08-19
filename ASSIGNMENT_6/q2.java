@@ -14,7 +14,7 @@ class solution{
                 maxlength=word.length();
             }
         }
-        System.err.println("Longest String: "+longestString+"\n"+"MaxLength: "+maxlength);
+        System.err.println("Longest String:  "+longestString+"\n"+"MaxLength: "+maxlength);
     }
 }
 public class q2{
