@@ -1,4 +1,6 @@
-
+/**6.4 Write a program to accept a sentence. Display the sentence in reversing order of its word.
+Sample Input: Computer is Fun
+Sample Output: Fun is Computer */
 import java.util.*;
 class solution{
     void  check(String str){
