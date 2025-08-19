@@ -28,7 +28,7 @@ class solution{
         
     }
 }
-public class q6{
+public class q5{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter String: ");
