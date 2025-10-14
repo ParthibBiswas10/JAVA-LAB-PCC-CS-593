@@ -1,0 +1,36 @@
+1) Compile
+
+Compile all files in one pack:
+
+javac pack1/*.java
+
+
+Compile all files in multiple packs:
+
+javac pack1/*.java pack2/*.java
+
+
+Compile a single file:
+
+javac pack1/Samepack.java
+
+
+Automatically compiles dependencies (A.java) if needed.
+
+2️) Run
+
+Run a class inside a pack:
+
+java pack1.Samepack
+
+
+Run another pack class:
+
+java pack2.Diffpack
+
+
+Important: Always run from the root folder that contains the pack folders.
+
+3) Clean compiled .class files (Windows PowerShell)
+Remove-Item pack1\*.class
+Remove-Item pack2\*.class
