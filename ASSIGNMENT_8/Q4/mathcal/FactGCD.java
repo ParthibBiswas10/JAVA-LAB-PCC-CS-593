@@ -19,5 +19,6 @@ public class FactGCD{
     public int calGCD(int a, int b){
         if(b==0) return a;
         return calGCD(b,a%b);
+        
     }
 }
