@@ -15,7 +15,7 @@ public class cal{
         System.out.println("GCD of "+num1+" and "+num2+" is: "+obj.calGCD(num1,num2));
 
         prime p = new prime();
-        System.out.println("Enter a number to check if prime: ");
+        System.out.println("Enter a number to check if prime or not : ");
         int x = sc.nextInt();
         if (p.isPrime(x)==1)
             System.out.println(x + " is a Prime number.");
