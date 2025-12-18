@@ -12,10 +12,15 @@ class solution{
         for(String word:words){
            int l=0;
            int r=word.length()-1;
-            if(word.charAt(l)!=word.charAt(r));
-            else{
-                System.out.println(word);
+           boolean isPal=true;
+            if(word.charAt(l)!=word.charAt(r)){
+                isPal=false;
             }
+            else{
+            l++;
+            r--;
+            }
+            if(isPal) System.out.println(word);
            
         }
         
