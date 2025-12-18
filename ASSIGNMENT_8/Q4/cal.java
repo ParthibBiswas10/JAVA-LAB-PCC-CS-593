@@ -7,12 +7,12 @@ public class cal{
 
         Scanner sc=new Scanner(System.in);
        
-        System.out.println("Enter num 1: ");
-        int num1=sc.nextInt();  
+        System.out.println("Enter num 1 : ");
+        double num1=sc.nextDouble();  
         System.out.println("Enter num 2: ");
-        int num2=sc.nextInt();
+        double num2=sc.nextInt();
         System.out.println("Factorial of "+num1+" is: "+obj.calFactorial(num1));
-        System.out.println("GCD of "+num1+" and "+num2+" is: "+obj.calGCD(num1,num2));
+        System.out.println("GCD of "+(int)num1+" and "+(int)num2+" is: "+obj.calGCD((int)num1, (int)num2));
 
         prime p = new prime();
         System.out.println("Enter a number to check if prime or not : ");
